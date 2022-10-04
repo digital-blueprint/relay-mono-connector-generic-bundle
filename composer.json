@@ -22,6 +22,12 @@
         "symfony/phpunit-bridge": "^5.4",
         "vimeo/psalm": "^4.2.1"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@gitlab.tugraz.at:dbp/mono/dbp-relay-mono-bundle.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Dbp\\Relay\\MonoConnectorGenericBundle\\": "src/"

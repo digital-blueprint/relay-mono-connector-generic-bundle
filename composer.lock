@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5964e303ddb32390a049a169de0eec3",
+    "content-hash": "e4cdaacf35dec415d7f0ba842f90f0ee",
     "packages": [
         {
             "name": "api-platform/core",
@@ -248,10 +248,10 @@
         {
             "name": "dbp/relay-mono-bundle",
             "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "../relay-mono-bundle",
-                "reference": "84798d33732aea57d1d4c5ae31d854cedc246f0b"
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.tugraz.at:dbp/mono/dbp-relay-mono-bundle.git",
+                "reference": "43e592781d81d586bc648c496a43b112083b5892"
             },
             "require": {
                 "api-platform/core": "^2.6",
@@ -276,6 +276,7 @@
                 "symfony/phpunit-bridge": "^5.4",
                 "vimeo/psalm": "^4.2.1"
             },
+            "default-branch": true,
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
@@ -316,9 +317,7 @@
                 "AGPL-3.0-or-later"
             ],
             "description": "A template bundle for the Relay API gateway",
-            "transport-options": {
-                "relative": true
-            }
+            "time": "2022-10-03T00:18:05+00:00"
         },
         {
             "name": "doctrine/annotations",
