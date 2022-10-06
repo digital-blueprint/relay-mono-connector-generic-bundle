@@ -1,6 +1,8 @@
 # DbpRelayMonoConnectorGenericBundle
 
-[GitLab](https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-connector-generic-bundle)
+[GitLab](https://gitlab.tugraz.at/dbp/mono/dbp-relay-mono-connector-generic-bundle) |
+[Packagist](https://packagist.org/packages/dbp/relay-mono-connector-generic-bundle)
+
 
 ## Development & Testing
 
