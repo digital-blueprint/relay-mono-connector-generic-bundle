@@ -1,6 +1,6 @@
 {
     "name": "dbp/relay-mono-connector-generic-bundle",
-    "description": "A template bundle for the Relay API gateway",
+    "description": "A generic connector for the mono payment bundle for the Relay API gateway",
     "type": "symfony-bundle",
     "license": "AGPL-3.0-or-later",
     "require": {
