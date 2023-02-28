@@ -3,6 +3,8 @@
 [GitHub](https://github.com/digital-blueprint/relay-mono-connector-generic-bundle) |
 [Packagist](https://packagist.org/packages/dbp/relay-mono-connector-generic-bundle)
 
+[![Test](https://github.com/digital-blueprint/relay-mono-connector-generic-bundle/actions/workflows/test.yml/badge.svg)](https://github.com/digital-blueprint/relay-mono-connector-generic-bundle/actions/workflows/test.yml)
+
 A generic connector for the mono bundle for the Relay API gateway
 
 ## Bundle installation
