@@ -6,6 +6,7 @@ namespace Dbp\Relay\MonoConnectorGenericBundle\Service;
 
 use Dbp\Relay\CoreBundle\API\UserSessionInterface;
 use Dbp\Relay\CoreBundle\Exception\ApiError;
+use Dbp\Relay\MonoBundle\Entity\Payment;
 use Dbp\Relay\MonoBundle\Entity\PaymentPersistence;
 use Dbp\Relay\MonoBundle\Service\BackendServiceInterface;
 use GuzzleHttp\Client;
@@ -28,14 +29,14 @@ class GenericService implements BackendServiceInterface, LoggerAwareInterface
         $this->userSession = $userSession;
     }
 
-    public function updateData(PaymentPersistence &$payment): bool
+    public function updateData(PaymentPersistence $paymentPersistence): bool
     {
         $changed = false;
 
         $userIdentifier = $this->userSession->getUserIdentifier();
-        $payment->setUserIdentifier($userIdentifier);
+        $paymentPersistence->setUserIdentifier($userIdentifier);
 
-        $data = json_decode((string) $payment->getData(), true, 512, JSON_THROW_ON_ERROR);
+        $data = json_decode((string) $paymentPersistence->getData(), true, 512, JSON_THROW_ON_ERROR);
 
         $requiredPropertyNames = [
             'paymentReference',
@@ -78,9 +79,9 @@ class GenericService implements BackendServiceInterface, LoggerAwareInterface
             $setMethod = 'set'.ucfirst($propertyName);
             if (
                 array_key_exists($propertyName, $data)
-                && method_exists($payment, $setMethod)
+                && method_exists($paymentPersistence, $setMethod)
             ) {
-                $payment->{$setMethod}((string) $data[$propertyName]);
+                $paymentPersistence->{$setMethod}((string) $data[$propertyName]);
                 $changed = true;
             }
         }
@@ -88,17 +89,22 @@ class GenericService implements BackendServiceInterface, LoggerAwareInterface
         return $changed;
     }
 
-    public function notify(PaymentPersistence &$payment): bool
+    public function updateEntity(PaymentPersistence $paymentPersistence, Payment $payment): bool
+    {
+        return false;
+    }
+
+    public function notify(PaymentPersistence $paymentPersistence): bool
     {
         $notified = false;
 
         if (
-            !$payment->getNotifiedAt()
-            && $payment->getNotifyUrl()
+            !$paymentPersistence->getNotifiedAt()
+            && $paymentPersistence->getNotifyUrl()
         ) {
             try {
                 $client = new Client();
-                $response = $client->request('GET', $payment->getNotifyUrl());
+                $response = $client->request('GET', $paymentPersistence->getNotifyUrl());
                 if (
                     $response->getStatusCode() >= 200
                     && $response->getStatusCode() < 300
@@ -114,7 +120,7 @@ class GenericService implements BackendServiceInterface, LoggerAwareInterface
         return $notified;
     }
 
-    public function cleanup(PaymentPersistence &$payment): bool
+    public function cleanup(PaymentPersistence $paymentPersistence): bool
     {
         return true;
     }
