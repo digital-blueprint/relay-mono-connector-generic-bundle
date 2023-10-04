@@ -6,9 +6,9 @@ namespace Dbp\Relay\MonoConnectorGenericBundle\Service;
 
 use Dbp\Relay\CoreBundle\API\UserSessionInterface;
 use Dbp\Relay\CoreBundle\Exception\ApiError;
-use Dbp\Relay\MonoBundle\Entity\Payment;
-use Dbp\Relay\MonoBundle\Entity\PaymentPersistence;
-use Dbp\Relay\MonoBundle\Service\BackendServiceInterface;
+use Dbp\Relay\MonoBundle\ApiPlatform\Payment;
+use Dbp\Relay\MonoBundle\BackendServiceProvider\BackendServiceInterface;
+use Dbp\Relay\MonoBundle\Persistence\PaymentPersistence;
 use GuzzleHttp\Client;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
