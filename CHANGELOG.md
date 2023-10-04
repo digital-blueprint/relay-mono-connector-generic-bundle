@@ -1,3 +1,7 @@
+# v0.1.5
+
+*  Compatibility with mono-bundle v0.4
+
 # v0.1.4
 
 * Update to api-platform 2.7
