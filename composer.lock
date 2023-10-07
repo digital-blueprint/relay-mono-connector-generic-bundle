@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "api-platform/core",
-            "version": "v2.7.15",
+            "version": "v2.7.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/api-platform/core.git",
-                "reference": "dd433f76da60819cd01278b54e4fb70283302aa8"
+                "reference": "e6f77e20b4ed9cb3e44c7398d6cda971d32190b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/api-platform/core/zipball/dd433f76da60819cd01278b54e4fb70283302aa8",
-                "reference": "dd433f76da60819cd01278b54e4fb70283302aa8",
+                "url": "https://api.github.com/repos/api-platform/core/zipball/e6f77e20b4ed9cb3e44c7398d6cda971d32190b0",
+                "reference": "e6f77e20b4ed9cb3e44c7398d6cda971d32190b0",
                 "shasum": ""
             },
             "require": {
@@ -165,7 +165,7 @@
             ],
             "support": {
                 "issues": "https://github.com/api-platform/core/issues",
-                "source": "https://github.com/api-platform/core/tree/v2.7.15"
+                "source": "https://github.com/api-platform/core/tree/v2.7.16"
             },
             "funding": [
                 {
@@ -173,20 +173,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-11T14:04:22+00:00"
+            "time": "2023-10-06T10:13:25+00:00"
         },
         {
             "name": "dbp/relay-core-bundle",
-            "version": "v0.1.126",
+            "version": "v0.1.127",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-core-bundle.git",
-                "reference": "ec0a94b3eb6a20643d3757f69c7babb43422965a"
+                "reference": "f2f9393c14907a68a5970568c895fb9b5f0813ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/ec0a94b3eb6a20643d3757f69c7babb43422965a",
-                "reference": "ec0a94b3eb6a20643d3757f69c7babb43422965a",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-core-bundle/zipball/f2f9393c14907a68a5970568c895fb9b5f0813ef",
+                "reference": "f2f9393c14907a68a5970568c895fb9b5f0813ef",
                 "shasum": ""
             },
             "require": {
@@ -254,22 +254,22 @@
             "description": "The core bundle of the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-core-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.126"
+                "source": "https://github.com/digital-blueprint/relay-core-bundle/tree/v0.1.127"
             },
-            "time": "2023-10-04T09:11:12+00:00"
+            "time": "2023-10-05T07:41:23+00:00"
         },
         {
             "name": "dbp/relay-mono-bundle",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-mono-bundle.git",
-                "reference": "eb662fe90ab72b55899ddc033ec22e6a47d21760"
+                "reference": "a716903613ee6dd11c61c35f6473c7d4295fb8df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-mono-bundle/zipball/eb662fe90ab72b55899ddc033ec22e6a47d21760",
-                "reference": "eb662fe90ab72b55899ddc033ec22e6a47d21760",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-mono-bundle/zipball/a716903613ee6dd11c61c35f6473c7d4295fb8df",
+                "reference": "a716903613ee6dd11c61c35f6473c7d4295fb8df",
                 "shasum": ""
             },
             "require": {
@@ -316,9 +316,9 @@
             "description": "A payment bundle for the Relay API gateway",
             "support": {
                 "issues": "https://github.com/digital-blueprint/relay-mono-bundle/issues",
-                "source": "https://github.com/digital-blueprint/relay-mono-bundle/tree/v0.4.0"
+                "source": "https://github.com/digital-blueprint/relay-mono-bundle/tree/v0.4.1"
             },
-            "time": "2023-10-03T14:17:39+00:00"
+            "time": "2023-10-05T11:41:07+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -9622,16 +9622,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.36",
+            "version": "1.10.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "ffa3089511121a672e62969404e4fddc753f9b15"
+                "reference": "5302bb402c57f00fb3c2c015bac86e0827e4b691"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ffa3089511121a672e62969404e4fddc753f9b15",
-                "reference": "ffa3089511121a672e62969404e4fddc753f9b15",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/5302bb402c57f00fb3c2c015bac86e0827e4b691",
+                "reference": "5302bb402c57f00fb3c2c015bac86e0827e4b691",
                 "shasum": ""
             },
             "require": {
@@ -9680,7 +9680,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-09-29T14:07:45+00:00"
+            "time": "2023-10-06T14:19:14+00:00"
         },
         {
             "name": "phpstan/phpstan-phpunit",
@@ -11811,5 +11811,5 @@
     "platform-overrides": {
         "php": "7.3"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
