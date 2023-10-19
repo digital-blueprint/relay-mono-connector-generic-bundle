@@ -1,3 +1,7 @@
+# v0.1.6
+
+* Minor cleanups
+
 # v0.1.5
 
 *  Compatibility with mono-bundle v0.4
