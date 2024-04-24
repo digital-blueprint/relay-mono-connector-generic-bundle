@@ -1,5 +1,10 @@
 # Changelog
 
+## v0.1.11
+
+* Fix the coverage command
+* Port to PHPUnit 10
+
 ## v0.1.10
 
 * Add support for api-platform 3.2
