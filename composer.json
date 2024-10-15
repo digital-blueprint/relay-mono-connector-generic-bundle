@@ -6,8 +6,8 @@
     "require": {
         "php": ">=8.1",
         "ext-json": "*",
-        "api-platform/core": "^2.7.11 || ^3.2",
-        "dbp/relay-core-bundle": "^0.1.148",
+        "api-platform/core": "^3.2",
+        "dbp/relay-core-bundle": "^0.1.186",
         "dbp/relay-mono-bundle": "^0.4.10",
         "guzzlehttp/guzzle": "^7.4",
         "psr/log": "^1.1.4 || ^2.0 || ^3.0",
