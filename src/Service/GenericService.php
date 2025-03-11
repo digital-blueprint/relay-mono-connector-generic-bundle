@@ -29,7 +29,7 @@ class GenericService implements BackendServiceInterface, LoggerAwareInterface
         $this->userSession = $userSession;
     }
 
-    public function updateData(PaymentPersistence $paymentPersistence): bool
+    public function updateData(string $paymentBackendType, PaymentPersistence $paymentPersistence): bool
     {
         $changed = false;
 
@@ -89,12 +89,12 @@ class GenericService implements BackendServiceInterface, LoggerAwareInterface
         return $changed;
     }
 
-    public function updateEntity(PaymentPersistence $paymentPersistence, Payment $payment): bool
+    public function updateEntity(string $paymentBackendType, PaymentPersistence $paymentPersistence, Payment $payment): bool
     {
         return false;
     }
 
-    public function notify(PaymentPersistence $paymentPersistence): bool
+    public function notify(string $paymentBackendType, PaymentPersistence $paymentPersistence): bool
     {
         $notified = false;
 
@@ -120,8 +120,13 @@ class GenericService implements BackendServiceInterface, LoggerAwareInterface
         return $notified;
     }
 
-    public function cleanup(PaymentPersistence $paymentPersistence): bool
+    public function cleanup(string $paymentBackendType, PaymentPersistence $paymentPersistence): bool
     {
         return true;
+    }
+
+    public function getPaymentBackendTypes(): array
+    {
+        return [];
     }
 }
