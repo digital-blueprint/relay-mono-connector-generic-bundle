@@ -59,7 +59,7 @@ class Kernel extends BaseKernel
             'payment_session_timeout' => 1234,
             'payment_types' => [
                 [
-                    'client_type' => 'bla',
+                    'backend_type' => 'bla',
                     'payment_methods' => [
                     ],
                 ],

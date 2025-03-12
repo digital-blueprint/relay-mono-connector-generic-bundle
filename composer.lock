@@ -336,12 +336,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-mono-bundle.git",
-                "reference": "879f04491fb35a7245957fe1e71995281dc3b5b5"
+                "reference": "42bebf793bbe48df34113b7449651211655fd0b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-mono-bundle/zipball/879f04491fb35a7245957fe1e71995281dc3b5b5",
-                "reference": "879f04491fb35a7245957fe1e71995281dc3b5b5",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-mono-bundle/zipball/42bebf793bbe48df34113b7449651211655fd0b2",
+                "reference": "42bebf793bbe48df34113b7449651211655fd0b2",
                 "shasum": ""
             },
             "require": {
@@ -399,7 +399,7 @@
                 "issues": "https://github.com/digital-blueprint/relay-mono-bundle/issues",
                 "source": "https://github.com/digital-blueprint/relay-mono-bundle/tree/creiter-wip"
             },
-            "time": "2025-03-11T09:45:18+00:00"
+            "time": "2025-03-12T10:56:59+00:00"
         },
         {
             "name": "doctrine/cache",
