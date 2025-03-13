@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.12
+
+* Port to mono-bundle v0.5
+* Drop support for Symfony 5
+* Drop support for Psalm
+
 ## v0.1.11
 
 * Fix the coverage command
