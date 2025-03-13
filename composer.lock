@@ -336,12 +336,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/digital-blueprint/relay-mono-bundle.git",
-                "reference": "42bebf793bbe48df34113b7449651211655fd0b2"
+                "reference": "a7d56f0b8ed37b415fcd7730442a953ddb80e9ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/digital-blueprint/relay-mono-bundle/zipball/42bebf793bbe48df34113b7449651211655fd0b2",
-                "reference": "42bebf793bbe48df34113b7449651211655fd0b2",
+                "url": "https://api.github.com/repos/digital-blueprint/relay-mono-bundle/zipball/a7d56f0b8ed37b415fcd7730442a953ddb80e9ab",
+                "reference": "a7d56f0b8ed37b415fcd7730442a953ddb80e9ab",
                 "shasum": ""
             },
             "require": {
@@ -381,8 +381,7 @@
                 "symfony/http-client": "^6.4",
                 "symfony/monolog-bridge": "^6.4",
                 "symfony/monolog-bundle": "^3.10",
-                "symfony/phpunit-bridge": "^7.0",
-                "vimeo/psalm": "^5.22.2"
+                "symfony/phpunit-bridge": "^7.0"
             },
             "type": "symfony-bundle",
             "autoload": {
@@ -399,7 +398,7 @@
                 "issues": "https://github.com/digital-blueprint/relay-mono-bundle/issues",
                 "source": "https://github.com/digital-blueprint/relay-mono-bundle/tree/creiter-wip"
             },
-            "time": "2025-03-12T10:56:59+00:00"
+            "time": "2025-03-13T14:33:40+00:00"
         },
         {
             "name": "doctrine/cache",
