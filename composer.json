@@ -6,7 +6,6 @@
     "require": {
         "php": ">=8.2",
         "ext-json": "*",
-        "api-platform/core": "^3.2",
         "dbp/relay-core-bundle": "^0.1.186",
         "dbp/relay-mono-bundle": "^0.5.0",
         "guzzlehttp/guzzle": "^7.4",
