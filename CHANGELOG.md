@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+* Add support for Guzzle 8
+
 ## v0.1.14
 
 * Add support for Symfony 7
