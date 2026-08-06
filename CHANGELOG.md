@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+## v0.1.15
+
 * Add support for Guzzle 8
 
 ## v0.1.14
